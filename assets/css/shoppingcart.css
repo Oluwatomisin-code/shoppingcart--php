@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*carousel*/
+/*linear-gradient(180deg, rgba(2, 18, 31, .8), rgba(2, 18, 31, .8)),*/
+
+.promo{
+    background-color: grey;
+}
+.info{
+    width: 300px;
+    height: 100%;
+    background-color: grey;
+    margin-right: 5px;
+}
+.carouselDiv{
+    width: 820px; 
+    height: 100%;
+    margin-left: 5px; 
+    background-image: url("../../images/headphones_audio_black_134032_3840x2400.jpg") !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll, scroll;
+}
+.hamburger{
+    position:fixed; 
+    margin-top: 57px;
+    width: 55px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    background: rgba(22, 13, 9, 0.7);
+}
+
+/*login signup modal*/
+.card-sideL{
+    clip-path: polygon(0 0, 120% 0, 100% 100%, 0 100%);
+}
+.card-sideR{
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+}
+.close-circle{
+    margin-right: -25px; 
+    margin-top: -10px;
+    width: 50px; 
+    height:50px; 
+    border-radius:50%; 
+    background: rgba(22, 13, 9, 0.7);
+    color: white;
+    display: grid;
+    place-items: center;
+}
+/*shopping_index.php body*/
+.contain{
+    width: 1130px;   
+    box-sizing: border-box;
+}
+
+/*product container*/
+.product_container{
+    height: 350px;
+    float: left;
+    margin: 20px 2vw 0 2vw;
+    width: 20%;
+    text-align: center;
+    background: white;
+    padding-bottom: 20px;
+}
+
+.card, .img{
+    border-radius: 0 !important;
+}
+.cardimg{
+    min-height: 180px;
+    max-height: 180px;
+}
+.product_container h3{
+    margin:10px;
+}
+.product_container img{
+    max-width: 100%;
+    max-height: 161px;
+}
+.btn_addtocart{
+    background-color:coral !important;
+    color: white;
+    border: none;
+    width: 125pt;
+    margin: 5px;
+    display:none;
+}
+.btn_viewdetails{
+    background-color:white !important;
+    color: coral;
+    border: 1px solid coral;
+    width: 125pt;
+    margin: 5px;
+    display:none;
+}
+
+.cardhover:hover{
+    box-shadow: 0 0 8px 0 rgba(0,0,0, .1);
+}
+.cardhover:hover .btn_addtocart, .cardhover:hover .btn_viewdetails{
+        display: block;
+}
+
+
+.btn_addtocart:hover{
+    background-color:rgb(22, 13, 9);
+}
+
+#cart_heading{
+    width: 90%;
+    margin-top: 90px;
+    height: fit-content;
+    border-bottom: 1px black solid;
+    padding: 10px 50px;
+    margin: auto;
+}
+.cartpage_productcontainer{
+    width: 300px;
+    height: 100px;
+    border-right: 1px black solid;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    top: 10vh;
+
+}
+.cartpage_productcontainer>img{
+    width: auto;
+    height: 100%;
+}

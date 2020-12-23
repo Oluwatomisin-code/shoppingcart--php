@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: rgb(196, 197, 199);
+}
+.navbar{
+    height: 10vh;
+    min-width: 100vw;
+    background-color: rgb(3, 50, 88);
+    color: white;
+    position: fixed;
+    z-index: 2;
+    opacity: 0.8;
+    
+}
+
+.pageheader{
+    float: left;
+    height: 100%;
+    width: auto;
+    margin-left: 30px;
+    text-align: center;
+    line-height: 10vh;
+}
+.pageheader a{
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.cartlink{
+    float: right;
+    margin-right: 30px;
+    height: 100%;
+    width: fit-content;
+    text-align: center;
+    line-height: 10vh;
+}
+.cartlink a{
+    display:block;
+    color: aliceblue;
+    text-decoration: none;
+}
+.class_count{
+    border-radius: 4rem;
+    padding: 2px 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+/*shopping_index.php body*/
+.container{
+    width: 90%;
+    margin: auto;
+    top: 15vh;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+
+/*product container*/
+.product_container{
+    height: 350px;
+    float: left;
+    margin: 20px 2vw 0 2vw;
+    width: 20%;
+    text-align: center;
+    background: white;
+    padding-bottom: 20px;
+}
+.product_container h3{
+    margin:10px;
+}
+.product_container img{
+    max-width: 100%;
+    max-height: 161px;
+}
+.btn_addtocart{
+    padding: 5px;
+    background-color:coral;
+    color: white;
+    border: none;
+}
+.btn_addtocart:active{
+    background-color:rgb(22, 13, 9);
+}
+
+#cart_heading{
+    width: 90%;
+    position: relative;
+    top: 10vh;
+    height: fit-content;
+    border-bottom: 1px black solid;
+    padding: 10px 50px;
+    margin: auto;
+}
+.cartpage_productcontainer{
+    width: 300px;
+    height: 100px;
+    border-right: 1px black solid;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    top: 10vh;
+    : 20  auto;
+
+}
+.cartpage_productcontainer>img{
+    width: auto;
+    height: 100%;
+}

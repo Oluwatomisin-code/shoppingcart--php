@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+
+<head>
+    <title>Forgotten Password</title>
+    <base>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <META HTTP-EQUIV="CONTENT-LANGUAGE" CONTENT="en-US">
+    <META NAME="CONTENT-LANGUAGE" CONTENT="en-US">
+    <META NAME="OWNER" CONTENT="support@Kkobit.com">
+    <META NAME="AUTHOR" CONTENT="Kkobit.com">
+    <META NAME="ROBOTS" CONTENT="index,follow">
+    <META NAME="REVISIT-AFTER" CONTENT="3days">
+    <META NAME="KEYWORDS" CONTENT="bitcoin escrow, litecoin escrow, BTC escrow, LTC escrow">
+    <meta name="description" content="Escrow provider for many cryptocurrencies.">
+    <script type="text/javascript">
+        if (top != self) {
+            top.location.replace(self.location.href);
+        }
+    </script>
+    <link href="../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="assets/css/user.css">
+    <script src="../ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic", "Montserrat:400,700", "Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
+            }
+        });
+    </script>
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon/favicon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon/favicon.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="images/favicon/favicon.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="images/favicon/favicon.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#f47721">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/images/favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <link rel="canonical" href="forgot.html" />
+    <script type="text/javascript" src="./assets/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+</head>
+
+<body>
+    <nav class='navbar navbar-static-top'>
+        <a href="home.php" class="logo">
+            <img width="185" src="assets/img/kkb_logo.png">
+        </a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-dd" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <div class="links navbar-collapse collapse" id="navbar-dd">
+            <ul class="nav navbar-nav">
+                <li><a href="supported-coins.html">Supported Coins</a></li>
+                <li><a href="create-escrow.html">Create Escrow</a></li>
+                <li><a href="check-status.html">Check Status</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="signin.php">sign in</a></li>
+                <li><a href="signup.php" class="btn btn-primary">create an account</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="escrow-form">
+        <form method="post">
+            <input type="hidden" name="step" value="step2">
+            <div class="form-block">
+                <div class="col-md-12" id="resetpass_msg">
+                    <!--alert for reset form-->
+                </div>
+                <h2 class="form-heading">Password Recovery</h2>
+                <h4>Enter Username <b>And</b> Email</h4>
+            </div>
+            <div class="form-block">
+                <input type="text" id="username" name="username" placeholder="Username" value="" required>
+            </div>
+            <div class="form-block">
+                <input type="email" id="email" name="email1" placeholder="Email" value="" required>
+            </div>
+            <div class="form-block next">
+                <input type="submit" id="resetpass" value="Reset My Password" class="form-control btn btn-default btn-span btn-primary">
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5e645b3f8d24fc2265865e9f/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+
+<!-- Mirrored from www.Kkobit.com/forgot by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 Jun 2020 21:40:56 GMT -->
+
+</html>
